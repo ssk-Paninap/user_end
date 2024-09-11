@@ -86,6 +86,12 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="generated_ticket.Designer.vb">
+      <DependentUpon>generated_ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generated_ticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="user_summary.Designer.vb">
       <DependentUpon>user_summary.vb</DependentUpon>
     </Compile>
@@ -121,6 +127,9 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="generated_ticket.resx">
+      <DependentUpon>generated_ticket.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -129,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="personal_info1.resx">
       <DependentUpon>personal_info1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_summary.resx">
+      <DependentUpon>user_summary.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
