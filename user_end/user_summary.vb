@@ -10,4 +10,9 @@
         Dim user_info As New Form2
         user_info.Show()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim genTick As New generated_ticket
+        genTick.Show()
+    End Sub
 End Class
