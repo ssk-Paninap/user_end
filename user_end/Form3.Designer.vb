@@ -126,12 +126,13 @@ Partial Class Form3
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(406, 354)
+        Me.Label7.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Silver
+        Me.Label7.Location = New System.Drawing.Point(420, 355)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(265, 19)
+        Me.Label7.Size = New System.Drawing.Size(237, 15)
         Me.Label7.TabIndex = 9
-        Me.Label7.Text = "Use a laboratory room for your class?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label7.Text = "Please input no more than 255 characters"
         '
         'TextBox1
         '
