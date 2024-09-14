@@ -3,7 +3,9 @@
         Dim personalInfoForm As New personal_info1
         personalInfoForm.Show()
 
-        Me.Hide()
     End Sub
 
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
