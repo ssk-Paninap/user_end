@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form5
+Partial Class full_room
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class Form5
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form5))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(full_room))
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -165,7 +165,6 @@ Partial Class Form5
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(866, 187)
         Me.TextBox1.TabIndex = 19
-        Me.TextBox1.Text = "Class Section, list of names, or course"
         '
         'Label5
         '
@@ -197,7 +196,7 @@ Partial Class Form5
         Me.ComboBox2.TabIndex = 33
         Me.ComboBox2.Text = "Room"
         '
-        'Form5
+        'full_room
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -218,7 +217,7 @@ Partial Class Form5
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form5"
+        Me.Name = "full_room"
         Me.Text = "Almost There!"
         Me.ResumeLayout(False)
         Me.PerformLayout()

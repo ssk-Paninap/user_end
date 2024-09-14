@@ -86,22 +86,30 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="personal_info1.Designer.vb">
+      <DependentUpon>personal_info1.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="personal_info1.vb">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="prof_info1.Designer.vb">
+      <DependentUpon>prof_info1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="prof_info1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.vb">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <Compile Include="prof_single.Designer.vb">
+      <DependentUpon>prof_single.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form4.vb">
+    <Compile Include="prof_single.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.vb">
-      <DependentUpon>Form5.vb</DependentUpon>
+    <Compile Include="full_room.Designer.vb">
+      <DependentUpon>full_room.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form5.vb">
+    <Compile Include="full_room.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="generated_ticket.Designer.vb">
@@ -131,12 +139,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="personal_info1.Designer.vb">
-      <DependentUpon>personal_info1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="personal_info1.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -145,14 +147,18 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="personal_info1.resx">
+      <DependentUpon>personal_info1.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <EmbeddedResource Include="prof_info1.resx">
+      <DependentUpon>prof_info1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.vb</DependentUpon>
+    <EmbeddedResource Include="prof_single.resx">
+      <DependentUpon>prof_single.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="full_room.resx">
+      <DependentUpon>full_room.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="generated_ticket.resx">
       <DependentUpon>generated_ticket.vb</DependentUpon>
@@ -162,9 +168,6 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="personal_info1.resx">
-      <DependentUpon>personal_info1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="user_summary.resx">
       <DependentUpon>user_summary.vb</DependentUpon>
