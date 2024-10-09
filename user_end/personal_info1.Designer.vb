@@ -141,6 +141,7 @@ Partial Class personal_info1
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "personal_info1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
         Me.ResumeLayout(False)
         Me.PerformLayout()
