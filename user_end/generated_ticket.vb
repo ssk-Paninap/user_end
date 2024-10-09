@@ -12,7 +12,7 @@
 
     Private Sub generated_ticket_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Display receipt information
-        TextBox1.Text = "===== RECEIPT =====" & Environment.NewLine &
+        TextBox1.Text = "===== TICKET RESERVED!! =====" & Environment.NewLine &
                         "Ticket ID: " & TicketId & Environment.NewLine & ' Added Ticket ID here
                         "Student ID: " & StudentId & Environment.NewLine &
                         "Full Name: " & FullName & Environment.NewLine &
@@ -25,7 +25,6 @@
                         "Ticket Date: " & TicketDate.ToString() & Environment.NewLine &
                         "==================="
 
-        ' Optionally set TicketId to TextBox2 if you want to show it separately
         TextBox2.Text = TicketId
     End Sub
 
