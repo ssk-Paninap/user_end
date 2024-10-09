@@ -30,24 +30,13 @@
         ComboBox1.Items.Add("3rd Year")
         ComboBox1.Items.Add("4th Year")
 
-        ComboBox2.Items.Add("Course 1")
-        ComboBox2.Items.Add("Course 2")
-        ComboBox2.Items.Add("Course 3")
+        ComboBox2.Items.Add("BSIT")
+        ComboBox2.Items.Add("BSCS")
+        ComboBox2.Items.Add("BSED")
+        ComboBox2.Items.Add("BEED")
+        ComboBox2.Items.Add("BSN")
     End Sub
-
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-
-    End Sub
-
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
-
+    Private Sub Form2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Application.Exit()
     End Sub
 End Class

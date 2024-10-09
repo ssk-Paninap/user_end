@@ -243,6 +243,7 @@ Partial Class user_summary
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "user_summary"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Almost there!"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -87,8 +87,8 @@ Partial Class personal_info1
         '
         'fn_tb
         '
+        Me.fn_tb.Font = New System.Drawing.Font("Segoe UI Semibold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fn_tb.Location = New System.Drawing.Point(111, 157)
-        Me.fn_tb.Multiline = True
         Me.fn_tb.Name = "fn_tb"
         Me.fn_tb.Size = New System.Drawing.Size(192, 43)
         Me.fn_tb.TabIndex = 17
@@ -141,7 +141,7 @@ Partial Class personal_info1
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "personal_info1"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Form3"
         Me.ResumeLayout(False)
         Me.PerformLayout()

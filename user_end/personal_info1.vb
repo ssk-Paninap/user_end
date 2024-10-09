@@ -1,7 +1,6 @@
 ﻿Public Class personal_info1
 
     Private Sub fn_tb_TextChanged(sender As Object, e As EventArgs) Handles fn_tb.TextChanged
-
         Form1.FullName = fn_tb.Text
     End Sub
 
@@ -19,7 +18,7 @@
         profForm.ShowDialog()
     End Sub
 
-    Private Sub personal_info1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub personal_info1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Application.Exit()
     End Sub
 End Class
