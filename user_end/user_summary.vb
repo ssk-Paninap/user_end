@@ -1,29 +1,29 @@
-﻿Imports System.Data.SqlClient ' Import the required namespace for SQL
+﻿Imports MySql.Data.MySqlClient
+
 
 Public Class user_summary
     Private Sub user_summary_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Load year levels into ComboBox1
+        'year levels into ComboBox1
         ComboBox1.Items.Add("First Year")
         ComboBox1.Items.Add("Second Year")
         ComboBox1.Items.Add("Third Year")
         ComboBox1.Items.Add("Fourth Year")
 
-        ' Load course options into ComboBox2 
+        ' Course options into ComboBox2 
         ComboBox2.Items.Add("Course 1")
         ComboBox2.Items.Add("Course 2")
         ComboBox2.Items.Add("Course 3")
 
-        ' Load PC numbers into ComboBox3 
+        'PC numbers into ComboBox3 
         ComboBox3.Items.Add("PC 1")
         ComboBox3.Items.Add("PC 2")
         ComboBox3.Items.Add("PC 3")
 
-        ' Load room numbers into ComboBox4 
+        'Room numbers into ComboBox4 
         ComboBox4.Items.Add("Room A")
         ComboBox4.Items.Add("Room B")
         ComboBox4.Items.Add("Room C")
 
-        ' Populate text boxes with the data from shared variables
         TextBox1.Text = Form1.FullName
         ComboBox1.SelectedIndex = Form1.YearLevel - 1
         ComboBox2.SelectedIndex = Form1.Course ' 
@@ -49,8 +49,8 @@ Public Class user_summary
 
         ' Database connection and insertion
         Dim connectionString As String = "Server=localhost;Database=labpass;Uid=root;Pwd=;"
-        Using connection As New SqlConnection(connectionString)
-            Dim command As New SqlCommand("INSERT INTO user_reservation (student_id, fullname, year_lvl, course, reason, duration, pc_number, lab_number, ticket_date) VALUES (@studentId, @fullname, @yearLevel, @course, @reason, @duration, @pcNumber, @labNumber, @ticketDate)", connection)
+        Using connection As New MySqlConnection(connectionString)
+            Dim command As New MySqlCommand("INSERT INTO user_reservation (student_id, fullname, year_lvl, course, reason, duration, pc_number, lab_number, ticket_date) VALUES (@studentId, @fullname, @yearLevel, @course, @reason, @duration, @pcNumber, @labNumber, @ticketDate)", connection)
             command.Parameters.AddWithValue("@studentId", studentId)
             command.Parameters.AddWithValue("@fullname", fullname)
             command.Parameters.AddWithValue("@yearLevel", yearLevel)
@@ -71,6 +71,7 @@ Public Class user_summary
                 connection.Close()
             End Try
         End Using
+
 
         Me.Hide()
         Dim genTick As New generated_ticket

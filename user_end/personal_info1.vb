@@ -1,7 +1,7 @@
 ﻿Public Class personal_info1
 
     Private Sub fn_tb_TextChanged(sender As Object, e As EventArgs) Handles fn_tb.TextChanged
-        ' Store the full name into the shared variable in Form1
+
         Form1.FullName = fn_tb.Text
     End Sub
 
@@ -13,9 +13,13 @@
     End Sub
 
     Private Sub goToProfForm_Click(sender As Object, e As EventArgs) Handles goToProfForm.Click
-        ' Navigate to prof_info1
+
         Me.Hide()
         Dim profForm As New prof_info1
-        profForm.ShowDialog() ' Changed to ShowDialog for consistency
+        profForm.ShowDialog()
+    End Sub
+
+    Private Sub personal_info1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
