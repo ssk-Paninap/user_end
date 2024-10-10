@@ -24,8 +24,16 @@
                         "Lab Number: " & LabNumber & Environment.NewLine &
                         "Ticket Date: " & TicketDate.ToString() & Environment.NewLine &
                         "==================="
-
+        TextBox1.Text = StudentId
         TextBox2.Text = TicketId
+        TextBox3.Text = YearLevel
+        TextBox4.Text = FullName
+        TextBox5.Text = Duration
+        TextBox6.Text = Reason
+        TextBox7.Text = LabNumber
+        TextBox8.Text = PCNumber
+        TextBox9.Text = TicketDate.ToString()
+        TextBox10.Text = Course
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -36,4 +44,9 @@
         Application.Exit()
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        Dim Form1 As New Form1
+        Form1.ShowDialog()
+    End Sub
 End Class
