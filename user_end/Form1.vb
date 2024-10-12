@@ -9,6 +9,13 @@
     Public Shared PCNumber As Integer
     Public Shared LabNumber As Integer
 
+    Public Shared p_dept As String
+    Public Shared p_reason As String
+    Public Shared p_Duration As Integer
+    Public Shared p_pcnum As Integer
+    Public Shared p_labNo As Integer
+    Public Shared restype As String
+
     Private Sub genticket_Click(sender As Object, e As EventArgs) Handles genticket.Click
         Me.Hide()
 

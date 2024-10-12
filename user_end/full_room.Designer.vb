@@ -48,9 +48,9 @@ Partial Class full_room
         Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button2.Location = New System.Drawing.Point(620, 710)
+        Me.Button2.Location = New System.Drawing.Point(356, 603)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(334, 36)
+        Me.Button2.Size = New System.Drawing.Size(231, 36)
         Me.Button2.TabIndex = 30
         Me.Button2.Text = "Generate a Ticket"
         Me.Button2.UseVisualStyleBackColor = False
@@ -61,9 +61,9 @@ Partial Class full_room
         Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Silver
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(88, 710)
+        Me.Button1.Location = New System.Drawing.Point(101, 603)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(334, 36)
+        Me.Button1.Size = New System.Drawing.Size(231, 36)
         Me.Button1.TabIndex = 29
         Me.Button1.Text = "Go Back and Correct my Inputs"
         Me.Button1.UseVisualStyleBackColor = True
@@ -72,7 +72,7 @@ Partial Class full_room
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(223, 669)
+        Me.Label9.Location = New System.Drawing.Point(236, 562)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(148, 16)
         Me.Label9.TabIndex = 28
@@ -82,7 +82,7 @@ Partial Class full_room
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(90, 575)
+        Me.Label8.Location = New System.Drawing.Point(16, 483)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(652, 48)
         Me.Label8.TabIndex = 27
@@ -92,7 +92,7 @@ Partial Class full_room
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(84, 531)
+        Me.Label7.Location = New System.Drawing.Point(10, 439)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(166, 29)
         Me.Label7.TabIndex = 26
@@ -102,9 +102,9 @@ Partial Class full_room
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(95, 466)
+        Me.Label6.Location = New System.Drawing.Point(142, 358)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(759, 32)
+        Me.Label6.Size = New System.Drawing.Size(423, 64)
         Me.Label6.TabIndex = 25
         Me.Label6.Text = resources.GetString("Label6.Text")
         '
@@ -112,7 +112,7 @@ Partial Class full_room
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(85, 219)
+        Me.Label4.Location = New System.Drawing.Point(141, 166)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(384, 20)
         Me.Label4.TabIndex = 24
@@ -122,7 +122,7 @@ Partial Class full_room
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(85, 184)
+        Me.Label3.Location = New System.Drawing.Point(50, 122)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(109, 20)
         Me.Label3.TabIndex = 23
@@ -132,7 +132,7 @@ Partial Class full_room
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(85, 123)
+        Me.Label2.Location = New System.Drawing.Point(51, 75)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(305, 16)
         Me.Label2.TabIndex = 22
@@ -142,7 +142,7 @@ Partial Class full_room
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(83, 85)
+        Me.Label1.Location = New System.Drawing.Point(49, 28)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(170, 29)
         Me.Label1.TabIndex = 21
@@ -150,7 +150,7 @@ Partial Class full_room
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(402, 657)
+        Me.TextBox2.Location = New System.Drawing.Point(415, 550)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(62, 37)
@@ -160,17 +160,17 @@ Partial Class full_room
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.ForeColor = System.Drawing.Color.Silver
-        Me.TextBox1.Location = New System.Drawing.Point(88, 244)
+        Me.TextBox1.Location = New System.Drawing.Point(165, 189)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(866, 187)
+        Me.TextBox1.Size = New System.Drawing.Size(318, 151)
         Me.TextBox1.TabIndex = 19
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(95, 442)
+        Me.Label5.Location = New System.Drawing.Point(92, 358)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(44, 16)
         Me.Label5.TabIndex = 31
@@ -180,9 +180,9 @@ Partial Class full_room
         '
         Me.ComboBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(200, 175)
+        Me.ComboBox1.Location = New System.Drawing.Point(165, 118)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(754, 29)
+        Me.ComboBox1.Size = New System.Drawing.Size(249, 29)
         Me.ComboBox1.TabIndex = 32
         Me.ComboBox1.Text = "School of Information Technoloy"
         '
@@ -190,7 +190,7 @@ Partial Class full_room
         '
         Me.ComboBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(93, 662)
+        Me.ComboBox2.Location = New System.Drawing.Point(101, 555)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(98, 29)
         Me.ComboBox2.TabIndex = 33
@@ -200,7 +200,7 @@ Partial Class full_room
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1037, 831)
+        Me.ClientSize = New System.Drawing.Size(673, 744)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label5)

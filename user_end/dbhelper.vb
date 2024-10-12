@@ -29,4 +29,32 @@ Public Class dbhelper
             Return False
         End Try
     End Function
+
+    Public Function InsertTeacherReservation(fullname As String, department As String, reservation_type As String, reason As String, room_number As String, pc_number As String, duration As Integer) As Boolean
+        Try
+            Using connection As New MySqlConnection(connectionString)
+                connection.Open()
+                ' SQL command to insert a new teacher reservation
+                Dim command As New MySqlCommand("INSERT INTO teacher_reservation (fullname, department, reservation_type, reason, room_number, pc_number, duration, reservation_date) VALUES (@fullname, @department, @reservation_type, @reason, @room_number, @pc_number, @duration, @reservation_date)", connection)
+
+                ' Add parameters for the teacher reservation
+                command.Parameters.AddWithValue("@fullname", fullname)
+                command.Parameters.AddWithValue("@department", department)
+                command.Parameters.AddWithValue("@reservation_type", reservation_type)
+                command.Parameters.AddWithValue("@reason", reason)
+                command.Parameters.AddWithValue("@room_number", room_number)
+                command.Parameters.AddWithValue("@pc_number", pc_number)
+                command.Parameters.AddWithValue("@duration", duration)
+
+                ' Add current timestamp for reservation_date
+                command.Parameters.AddWithValue("@reservation_date", DateTime.Now)
+
+                command.ExecuteNonQuery()
+                Return True
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+            Return False
+        End Try
+    End Function
 End Class
