@@ -26,7 +26,6 @@ Partial Class prof_info1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
@@ -41,10 +40,10 @@ Partial Class prof_info1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Calibri", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(360, 33)
+        Me.Label1.Font = New System.Drawing.Font("Calibri", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(8, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(353, 33)
+        Me.Label1.Size = New System.Drawing.Size(314, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Greetings, Prof Juan Dela Cruz"
         '
@@ -52,38 +51,27 @@ Partial Class prof_info1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(386, 76)
+        Me.Label2.Location = New System.Drawing.Point(8, 51)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(317, 19)
+        Me.Label2.Size = New System.Drawing.Size(280, 19)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Please provide more information about yourself"
+        Me.Label2.Text = "Please provide details for the reservation."
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(488, 124)
+        Me.Label3.Location = New System.Drawing.Point(187, 87)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(92, 19)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Department"
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonShadow
-        Me.Label4.Location = New System.Drawing.Point(351, 181)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(379, 18)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Please check your ID or Registration form for your student ID"
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(406, 211)
+        Me.Label5.Location = New System.Drawing.Point(106, 158)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(265, 19)
         Me.Label5.TabIndex = 5
@@ -93,7 +81,7 @@ Partial Class prof_info1
         '
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(387, 245)
+        Me.RadioButton1.Location = New System.Drawing.Point(87, 192)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(284, 20)
         Me.RadioButton1.TabIndex = 6
@@ -105,7 +93,7 @@ Partial Class prof_info1
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(387, 283)
+        Me.RadioButton2.Location = New System.Drawing.Point(87, 230)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(192, 20)
         Me.RadioButton2.TabIndex = 7
@@ -117,7 +105,7 @@ Partial Class prof_info1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(406, 324)
+        Me.Label6.Location = New System.Drawing.Point(106, 271)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(265, 19)
         Me.Label6.TabIndex = 8
@@ -128,7 +116,7 @@ Partial Class prof_info1
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Silver
-        Me.Label7.Location = New System.Drawing.Point(420, 355)
+        Me.Label7.Location = New System.Drawing.Point(120, 302)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(237, 15)
         Me.Label7.TabIndex = 9
@@ -138,10 +126,10 @@ Partial Class prof_info1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.TextBox1.Location = New System.Drawing.Point(303, 395)
+        Me.TextBox1.Location = New System.Drawing.Point(56, 330)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(503, 221)
+        Me.TextBox1.Size = New System.Drawing.Size(347, 117)
         Me.TextBox1.TabIndex = 10
         '
         'Button1
@@ -149,7 +137,7 @@ Partial Class prof_info1
         Me.Button1.BackColor = System.Drawing.SystemColors.ControlDark
         Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(330, 637)
+        Me.Button1.Location = New System.Drawing.Point(12, 464)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(179, 43)
         Me.Button1.TabIndex = 11
@@ -162,7 +150,7 @@ Partial Class prof_info1
         Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(584, 637)
+        Me.Button2.Location = New System.Drawing.Point(266, 464)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(179, 43)
         Me.Button2.TabIndex = 12
@@ -173,17 +161,17 @@ Partial Class prof_info1
         '
         Me.ComboBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(330, 149)
+        Me.ComboBox1.Location = New System.Drawing.Point(23, 109)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(433, 29)
         Me.ComboBox1.TabIndex = 13
-        Me.ComboBox1.Text = "Dropdown Components"
+        Me.ComboBox1.Text = "Which department:"
         '
         'prof_info1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1068, 828)
+        Me.ClientSize = New System.Drawing.Size(479, 545)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -193,7 +181,6 @@ Partial Class prof_info1
         Me.Controls.Add(Me.RadioButton2)
         Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -208,7 +195,6 @@ Partial Class prof_info1
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
