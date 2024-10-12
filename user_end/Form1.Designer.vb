@@ -56,6 +56,7 @@ Partial Class Form1
         '
         Me.genticket.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.genticket.BackColor = System.Drawing.Color.MediumPurple
+        Me.genticket.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.genticket.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.genticket.Location = New System.Drawing.Point(162, 298)
         Me.genticket.Margin = New System.Windows.Forms.Padding(0)

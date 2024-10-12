@@ -32,12 +32,11 @@ Public Class user_summary
         ComboBox4.Items.Add("Lab 202")
         ComboBox4.Items.Add("Lab 203")
         ComboBox4.Items.Add("Lab 204")
-
-
-        TextBox1.Text = Form1.FullName
+        Label1.Text = "Just to clarify " & Form1.FullName
+        TextBox1.Text = Form1.StudentID
         ComboBox1.SelectedIndex = Form1.YearLevel - 1
-        ComboBox2.SelectedIndex = Form1.Course ' 
-        TextBox2.Text = Form1.Reason ' 
+        ComboBox2.SelectedIndex = Form1.Course
+        TextBox2.Text = Form1.Reason
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -48,7 +47,7 @@ Public Class user_summary
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim studentId As String = Form1.StudentID
-        Dim fullname As String = TextBox1.Text
+        Dim fullname As String = Form1.FullName ' Assign FullName correctly here
         Dim yearLevel As Integer = ComboBox1.SelectedIndex + 1
         Dim course As String = ComboBox2.SelectedItem.ToString()
         Dim reason As String = TextBox2.Text
@@ -85,17 +84,17 @@ Public Class user_summary
         End Using
 
         Dim genTick As New generated_ticket With {
-            .StudentId = studentId,
-            .FullName = fullname,
-            .YearLevel = yearLevel.ToString(),
-            .Course = course,
-            .Reason = reason,
-            .Duration = duration,
-            .PCNumber = pcNumber,
-            .LabNumber = labNumber,
-            .TicketDate = DateTime.Now,
-            .TicketId = ticketId
-        }   'values para sa generated ticket display
+        .StudentId = studentId,
+        .FullName = fullname, ' Ensure FullName is passed here
+        .YearLevel = yearLevel.ToString(),
+        .Course = course,
+        .Reason = reason,
+        .Duration = duration,
+        .PCNumber = pcNumber,
+        .LabNumber = labNumber,
+        .TicketDate = DateTime.Now,
+        .TicketId = ticketId
+    }   'values para sa generated ticket display
 
         Me.Hide()
         genTick.ShowDialog()

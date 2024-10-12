@@ -74,6 +74,7 @@ Partial Class Form2
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(193, 38)
         Me.TextBox1.TabIndex = 3
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label4
         '
@@ -147,6 +148,7 @@ Partial Class Form2
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.MediumPurple
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Button2.Location = New System.Drawing.Point(245, 480)
         Me.Button2.Name = "Button2"

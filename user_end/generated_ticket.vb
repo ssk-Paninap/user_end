@@ -11,28 +11,15 @@
     Public Property TicketId As String
 
     Private Sub generated_ticket_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Display receipt information
-        TextBox1.Text = "===== TICKET RESERVED!! =====" & Environment.NewLine &
-                        "Ticket ID: " & TicketId & Environment.NewLine & ' Added Ticket ID here
-                        "Student ID: " & StudentId & Environment.NewLine &
-                        "Full Name: " & FullName & Environment.NewLine &
-                        "Year Level: " & YearLevel & Environment.NewLine &
-                        "Course: " & Course & Environment.NewLine &
-                        "Reason: " & Reason & Environment.NewLine &
-                        "Duration: " & Duration & " minutes" & Environment.NewLine &
-                        "PC Number: " & PCNumber & Environment.NewLine &
-                        "Lab Number: " & LabNumber & Environment.NewLine &
-                        "Ticket Date: " & TicketDate.ToString() & Environment.NewLine &
-                        "==================="
         TextBox1.Text = StudentId
         TextBox2.Text = TicketId
         TextBox3.Text = YearLevel
-        TextBox4.Text = FullName
-        TextBox5.Text = Duration
+        TextBox4.Text = FullName ' Ensure FullName is assigned to TextBox4
+        TextBox5.Text = Duration.ToString()
         TextBox6.Text = Reason
         TextBox7.Text = LabNumber
         TextBox8.Text = PCNumber
-        TextBox9.Text = TicketDate.ToString()
+        TextBox9.Text = TicketDate.ToString("MM/dd/yyyy HH:mm:ss")
         TextBox10.Text = Course
     End Sub
 

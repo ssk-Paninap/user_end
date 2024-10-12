@@ -35,6 +35,8 @@
         ComboBox2.Items.Add("BSED")
         ComboBox2.Items.Add("BEED")
         ComboBox2.Items.Add("BSN")
+
+        Label1.Text = "Hi, " & Form1.FullName & "! Please proceed."
     End Sub
     Private Sub Form2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Application.Exit()

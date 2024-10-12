@@ -72,7 +72,8 @@ Partial Class generated_ticket
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.DarkViolet
+        Me.Button1.BackColor = System.Drawing.Color.MediumPurple
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Button1.Location = New System.Drawing.Point(246, 343)
@@ -87,7 +88,7 @@ Partial Class generated_ticket
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonShadow
-        Me.Label5.Location = New System.Drawing.Point(91, 411)
+        Me.Label5.Location = New System.Drawing.Point(59, 401)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(361, 13)
         Me.Label5.TabIndex = 6

@@ -35,21 +35,27 @@ Partial Class personal_info1
         '
         'goToStudForm
         '
+        Me.goToStudForm.BackColor = System.Drawing.Color.Yellow
+        Me.goToStudForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.goToStudForm.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.goToStudForm.Location = New System.Drawing.Point(104, 320)
         Me.goToStudForm.Name = "goToStudForm"
         Me.goToStudForm.Size = New System.Drawing.Size(91, 38)
         Me.goToStudForm.TabIndex = 22
         Me.goToStudForm.Text = "I am a student"
-        Me.goToStudForm.UseVisualStyleBackColor = True
+        Me.goToStudForm.UseVisualStyleBackColor = False
         '
         'goToProfForm
         '
+        Me.goToProfForm.BackColor = System.Drawing.Color.MediumPurple
+        Me.goToProfForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.goToProfForm.ForeColor = System.Drawing.Color.White
         Me.goToProfForm.Location = New System.Drawing.Point(212, 320)
         Me.goToProfForm.Name = "goToProfForm"
         Me.goToProfForm.Size = New System.Drawing.Size(91, 38)
         Me.goToProfForm.TabIndex = 21
         Me.goToProfForm.Text = "I am a professor"
-        Me.goToProfForm.UseVisualStyleBackColor = True
+        Me.goToProfForm.UseVisualStyleBackColor = False
         '
         'Label6
         '
