@@ -2,8 +2,7 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Form1.p_reason = TextBox1.Text
 
-        ' Change this line to get the selected item as a string
-        Form1.p_dept = ComboBox1.SelectedItem.ToString() ' Change here
+        Form1.p_dept = ComboBox1.SelectedItem.ToString()
 
         If RadioButton1.Checked Then
             Me.Hide()

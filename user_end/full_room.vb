@@ -21,20 +21,21 @@
 
         If success Then
             MessageBox.Show("Teacher reservation added successfully!")
-            Me.Hide()
-            Dim generatedTicket As New generated_ticket
-            generatedTicket.Show()
         Else
             MessageBox.Show("Failed to add teacher reservation.")
         End If
+        Application.Exit()
+        'Me.Hide()
+        ' Dim prof_ticket As New prof_ticket
+        ' prof_ticket.ShowDialog()
     End Sub
 
     Private Sub full_room_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ComboBox1.Items.Add("A")
-        ComboBox1.Items.Add("B")
-        ComboBox1.Items.Add("C")
-        ComboBox1.Items.Add("D")
-        ComboBox1.Items.Add("E")
+        ComboBox1.Items.Add("Dept A")
+        ComboBox1.Items.Add("Dept B")
+        ComboBox1.Items.Add("Dept C")
+        ComboBox1.Items.Add("Dept D")
+        ComboBox1.Items.Add("Dept E")
 
         ComboBox2.Items.Add("Lab 202")
         ComboBox2.Items.Add("Lab 203")

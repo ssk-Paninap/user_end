@@ -123,6 +123,12 @@
     <Compile Include="generated_ticket.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="prof_ticket.Designer.vb">
+      <DependentUpon>prof_ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="prof_ticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="user_summary.Designer.vb">
       <DependentUpon>user_summary.vb</DependentUpon>
     </Compile>
@@ -173,6 +179,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prof_ticket.resx">
+      <DependentUpon>prof_ticket.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="user_summary.resx">
       <DependentUpon>user_summary.vb</DependentUpon>

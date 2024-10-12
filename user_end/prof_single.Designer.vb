@@ -233,6 +233,7 @@ Partial Class prof_single
         Me.Controls.Add(Me.TextBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "prof_single"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Almost There!"
         Me.ResumeLayout(False)
         Me.PerformLayout()

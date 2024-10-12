@@ -218,6 +218,7 @@ Partial Class full_room
         Me.Controls.Add(Me.TextBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "full_room"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Almost There!"
         Me.ResumeLayout(False)
         Me.PerformLayout()

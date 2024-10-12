@@ -186,6 +186,7 @@ Partial Class prof_info1
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "prof_info1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Professor Information"
         Me.ResumeLayout(False)
         Me.PerformLayout()
