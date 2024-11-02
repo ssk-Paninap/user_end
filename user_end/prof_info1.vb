@@ -1,6 +1,6 @@
 ﻿Public Class prof_info1
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Form1.p_reason = TextBox1.Text
+        Form1.p_reason = ComboBox2.SelectedValue
 
         Form1.p_dept = ComboBox1.SelectedItem.ToString()
 
@@ -31,7 +31,16 @@
         ComboBox1.Items.Add("C")
         ComboBox1.Items.Add("D")
         ComboBox1.Items.Add("E")
+
         Label1.Text = "Greetings! Prof. " & Form1.FullName
+
+        ComboBox2.Items.Add("Acads")
+        ComboBox2.Items.Add("Research")
+        ComboBox2.Items.Add("Online Class")
+        ComboBox2.Items.Add("Project Building")
+
+
+
     End Sub
 
     Private Sub prof_info1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing

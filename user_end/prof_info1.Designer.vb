@@ -30,11 +30,10 @@ Partial Class prof_info1
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -105,39 +104,18 @@ Partial Class prof_info1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(106, 271)
+        Me.Label6.Location = New System.Drawing.Point(132, 284)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(265, 19)
+        Me.Label6.Size = New System.Drawing.Size(214, 19)
         Me.Label6.TabIndex = 8
-        Me.Label6.Text = "Use a laboratory room for your class?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Silver
-        Me.Label7.Location = New System.Drawing.Point(120, 302)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(237, 15)
-        Me.Label7.TabIndex = 9
-        Me.Label7.Text = "Please input no more than 255 characters"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.TextBox1.Location = New System.Drawing.Point(56, 330)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(347, 117)
-        Me.TextBox1.TabIndex = 10
+        Me.Label6.Text = "Purpose of using a Computer?"
         '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ControlDark
         Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(12, 464)
+        Me.Button1.Location = New System.Drawing.Point(23, 385)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(179, 43)
         Me.Button1.TabIndex = 11
@@ -150,7 +128,7 @@ Partial Class prof_info1
         Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(266, 464)
+        Me.Button2.Location = New System.Drawing.Point(277, 385)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(179, 43)
         Me.Button2.TabIndex = 12
@@ -165,18 +143,27 @@ Partial Class prof_info1
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(433, 29)
         Me.ComboBox1.TabIndex = 13
-        Me.ComboBox1.Text = "Which department:"
+        Me.ComboBox1.Text = "Department"
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(23, 331)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(433, 29)
+        Me.ComboBox2.TabIndex = 14
+        Me.ComboBox2.Text = "Purpose"
         '
         'prof_info1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(479, 545)
+        Me.ClientSize = New System.Drawing.Size(479, 450)
+        Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.RadioButton2)
         Me.Controls.Add(Me.RadioButton1)
@@ -200,9 +187,8 @@ Partial Class prof_info1
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBox2 As ComboBox
 End Class
