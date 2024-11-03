@@ -7,7 +7,7 @@
         Dim reason As String = Form1.p_reason
         Dim room_number As String = ComboBox2.SelectedItem
         Dim pc_number As String = Form1.p_pcnum
-        Dim duration As Integer = Integer.Parse(ComboBox4.SelectedValue)
+        Dim duration As Integer = Integer.Parse(ComboBox4.SelectedIndex)
 
         Dim db As New dbhelper()
         Dim success As Boolean = db.InsertTeacherReservation(fullname, department, reservation_type, reason, room_number, pc_number, duration)
