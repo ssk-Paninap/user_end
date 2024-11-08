@@ -32,11 +32,28 @@ Public Class user_summary
         ComboBox4.Items.Add("Lab 202")
         ComboBox4.Items.Add("Lab 203")
         ComboBox4.Items.Add("Lab 204")
+
+        ComboBox5.Items.Add("Acads")
+        ComboBox5.Items.Add("Research")
+        ComboBox5.Items.Add("Online Class")
+        ComboBox5.Items.Add("Project Building")
+
+        ComboBox6.Items.Add("7:00 - 8:00")
+        ComboBox6.Items.Add("8:00 - 9:00")
+        ComboBox6.Items.Add("9:00 - 10:00")
+        ComboBox6.Items.Add("10:00 - 11:00")
+        ComboBox6.Items.Add("11:00 - 12:00")
+        ComboBox6.Items.Add("12:00 - 13:00")
+        ComboBox6.Items.Add("13:00 - 14:00")
+        ComboBox6.Items.Add("14:00 - 15:00")
+        ComboBox6.Items.Add("15:00 - 16:00")
+        ComboBox6.Items.Add("16:00 - 17:00")
+
         Label1.Text = "Just to clarify " & Form1.FullName
         TextBox1.Text = Form1.StudentID
         ComboBox1.SelectedIndex = Form1.YearLevel - 1
         ComboBox2.SelectedIndex = Form1.Course
-        TextBox2.Text = Form1.Reason
+        ComboBox5.Text = Form1.reason
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -50,8 +67,8 @@ Public Class user_summary
         Dim fullname As String = Form1.FullName ' Assign FullName correctly here
         Dim yearLevel As Integer = ComboBox1.SelectedIndex + 1
         Dim course As String = ComboBox2.SelectedItem.ToString()
-        Dim reason As String = TextBox2.Text
-        Dim duration As Integer = Integer.Parse(TextBox3.Text)
+        Dim reason As String = ComboBox5.SelectedText.ToString()
+        Dim duration As String = ComboBox6.SelectedText
         Dim pcNumber As String = ComboBox3.SelectedItem.ToString()
         Dim labNumber As String = ComboBox4.SelectedItem.ToString()
 

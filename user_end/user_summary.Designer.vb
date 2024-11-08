@@ -30,7 +30,6 @@ Partial Class user_summary
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -38,9 +37,10 @@ Partial Class user_summary
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -110,19 +110,11 @@ Partial Class user_summary
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Purpose of using a computer"
         '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(32, 205)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(502, 90)
-        Me.TextBox2.TabIndex = 7
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(29, 315)
+        Me.Label5.Location = New System.Drawing.Point(25, 250)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(42, 17)
         Me.Label5.TabIndex = 8
@@ -131,7 +123,7 @@ Partial Class user_summary
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(29, 342)
+        Me.Label6.Location = New System.Drawing.Point(25, 277)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(462, 13)
         Me.Label6.TabIndex = 9
@@ -142,7 +134,7 @@ Partial Class user_summary
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(29, 380)
+        Me.Label7.Location = New System.Drawing.Point(25, 315)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(103, 21)
         Me.Label7.TabIndex = 10
@@ -151,7 +143,7 @@ Partial Class user_summary
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(30, 415)
+        Me.Label8.Location = New System.Drawing.Point(26, 350)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(553, 52)
         Me.Label8.TabIndex = 11
@@ -162,7 +154,7 @@ Partial Class user_summary
         '
         Me.ComboBox3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(181, 490)
+        Me.ComboBox3.Location = New System.Drawing.Point(177, 425)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(121, 29)
         Me.ComboBox3.TabIndex = 15
@@ -172,7 +164,7 @@ Partial Class user_summary
         '
         Me.ComboBox4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(33, 490)
+        Me.ComboBox4.Location = New System.Drawing.Point(29, 425)
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(121, 29)
         Me.ComboBox4.TabIndex = 14
@@ -182,23 +174,15 @@ Partial Class user_summary
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(316, 493)
+        Me.Label9.Location = New System.Drawing.Point(312, 428)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(143, 34)
         Me.Label9.TabIndex = 16
         Me.Label9.Text = "Duration (in Minutes)" & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'TextBox3
-        '
-        Me.TextBox3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(465, 490)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(84, 29)
-        Me.TextBox3.TabIndex = 17
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(32, 538)
+        Me.Button1.Location = New System.Drawing.Point(117, 465)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(165, 46)
         Me.Button1.TabIndex = 18
@@ -209,21 +193,42 @@ Partial Class user_summary
         '
         Me.Button2.BackColor = System.Drawing.Color.MediumPurple
         Me.Button2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button2.Location = New System.Drawing.Point(257, 538)
+        Me.Button2.Location = New System.Drawing.Point(342, 465)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(165, 46)
         Me.Button2.TabIndex = 19
         Me.Button2.Text = "Generate a ticket"
         Me.Button2.UseVisualStyleBackColor = False
         '
+        'ComboBox5
+        '
+        Me.ComboBox5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox5.FormattingEnabled = True
+        Me.ComboBox5.Location = New System.Drawing.Point(32, 203)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(184, 29)
+        Me.ComboBox5.TabIndex = 20
+        Me.ComboBox5.Text = "Purpose"
+        '
+        'ComboBox6
+        '
+        Me.ComboBox6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox6.FormattingEnabled = True
+        Me.ComboBox6.Location = New System.Drawing.Point(461, 425)
+        Me.ComboBox6.Name = "ComboBox6"
+        Me.ComboBox6.Size = New System.Drawing.Size(143, 29)
+        Me.ComboBox6.TabIndex = 21
+        Me.ComboBox6.Text = "Duration"
+        '
         'user_summary
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(616, 611)
+        Me.ClientSize = New System.Drawing.Size(616, 545)
+        Me.Controls.Add(Me.ComboBox6)
+        Me.Controls.Add(Me.ComboBox5)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.ComboBox4)
@@ -231,7 +236,6 @@ Partial Class user_summary
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
@@ -257,7 +261,6 @@ Partial Class user_summary
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
@@ -265,7 +268,8 @@ Partial Class user_summary
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents ComboBox5 As ComboBox
+    Friend WithEvents ComboBox6 As ComboBox
 End Class
