@@ -4,7 +4,7 @@
     Public Shared FullName As String
     Public Shared YearLevel As Integer
     Public Shared Course As Integer
-    Public Shared Reason As String
+    Public Shared reason As String
     Public Shared Duration As Integer
     Public Shared PCNumber As Integer
     Public Shared LabNumber As Integer

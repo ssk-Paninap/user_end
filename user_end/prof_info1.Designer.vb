@@ -149,9 +149,9 @@ Partial Class prof_info1
         '
         Me.ComboBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(23, 331)
+        Me.ComboBox2.Location = New System.Drawing.Point(143, 320)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(433, 29)
+        Me.ComboBox2.Size = New System.Drawing.Size(179, 29)
         Me.ComboBox2.TabIndex = 14
         Me.ComboBox2.Text = "Purpose"
         '

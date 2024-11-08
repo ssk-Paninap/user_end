@@ -8,10 +8,10 @@ Public Class dbhelper
             Using connection As New MySqlConnection(connectionString)
                 connection.Open()
                 ' Updated SQL command to include ticket_id
-                Dim command As New MySqlCommand("INSERT INTO user_reservation (ticket_id, student_id, fullname, year_lvl, course, reason, duration, pc_number, lab_number) VALUES (@ticket_id, @student_id, @fullname, @year_lvl, @course, @reason, @duration, @pc_number, @lab_number)", connection)
+                Dim command As New MySqlCommand("INSERT INTO user_reservation (user_id, student_id, fullname, year_lvl, course, reason, duration, pc_number, lab_number) VALUES (@ticket_id, @student_id, @fullname, @year_lvl, @course, @reason, @duration, @pc_number, @lab_number)", connection)
 
                 ' Add the new parameter for ticket_id
-                command.Parameters.AddWithValue("@ticket_id", ticket_id)
+                command.Parameters.AddWithValue("@user_id", ticket_id)
                 command.Parameters.AddWithValue("@student_id", student_id)
                 command.Parameters.AddWithValue("@fullname", fullname)
                 command.Parameters.AddWithValue("@year_lvl", year_lvl)

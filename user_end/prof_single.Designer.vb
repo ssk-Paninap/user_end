@@ -37,8 +37,8 @@ Partial Class prof_single
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -190,16 +190,6 @@ Partial Class prof_single
         Me.ComboBox3.TabIndex = 18
         Me.ComboBox3.Text = "PC"
         '
-        'ComboBox4
-        '
-        Me.ComboBox4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(62, 239)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(271, 29)
-        Me.ComboBox4.TabIndex = 19
-        Me.ComboBox4.Text = "Purpose"
-        '
         'ComboBox5
         '
         Me.ComboBox5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -209,6 +199,16 @@ Partial Class prof_single
         Me.ComboBox5.Size = New System.Drawing.Size(126, 29)
         Me.ComboBox5.TabIndex = 20
         Me.ComboBox5.Text = "Duration Time"
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Location = New System.Drawing.Point(62, 239)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(271, 29)
+        Me.ComboBox4.TabIndex = 19
+        Me.ComboBox4.Text = "Purpose"
         '
         'prof_single
         '
@@ -253,6 +253,6 @@ Partial Class prof_single
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents ComboBox5 As ComboBox
+    Friend WithEvents ComboBox4 As ComboBox
 End Class

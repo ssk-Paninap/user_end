@@ -36,11 +36,11 @@
     End Sub
 
     Private Sub prof_single_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ComboBox1.Items.Add("Dept A")
-        ComboBox1.Items.Add("Dept B")
-        ComboBox1.Items.Add("Dept C")
-        ComboBox1.Items.Add("Dept D")
-        ComboBox1.Items.Add("Dept E")
+        ComboBox1.Items.Add("School of Information Technology/ Computer Science")
+        ComboBox1.Items.Add("Nursing")
+        ComboBox1.Items.Add("Criminology")
+        ComboBox1.Items.Add("Education")
+        ComboBox1.Items.Add("Psychology")
 
         ComboBox2.Items.Add("Lab 202")
         ComboBox2.Items.Add("Lab 203")
@@ -75,7 +75,7 @@
         ComboBox5.Items.Add("16:00 - 17:00")
 
         Label1.Text = "Just to clarify " & Form1.FullName
-        ComboBox3.SelectedItem = Form1.p_reason
+        ComboBox4.Text = Form1.p_reason
         ComboBox1.Text = Form1.p_dept
     End Sub
 End Class

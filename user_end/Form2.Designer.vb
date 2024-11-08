@@ -32,9 +32,9 @@ Partial Class Form2
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -128,17 +128,9 @@ Partial Class Form2
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "Please input no more than 255 characters"
         '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(82, 312)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(256, 139)
-        Me.TextBox2.TabIndex = 9
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(82, 480)
+        Me.Button1.Location = New System.Drawing.Point(82, 383)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(93, 35)
         Me.Button1.TabIndex = 10
@@ -150,21 +142,31 @@ Partial Class Form2
         Me.Button2.BackColor = System.Drawing.Color.MediumPurple
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button2.Location = New System.Drawing.Point(245, 480)
+        Me.Button2.Location = New System.Drawing.Point(245, 383)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(93, 35)
         Me.Button2.TabIndex = 11
         Me.Button2.Text = "Next"
         Me.Button2.UseVisualStyleBackColor = False
         '
+        'ComboBox3
+        '
+        Me.ComboBox3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(82, 325)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(256, 29)
+        Me.ComboBox3.TabIndex = 12
+        Me.ComboBox3.Text = "Course"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(449, 543)
+        Me.ClientSize = New System.Drawing.Size(449, 456)
+        Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.ComboBox2)
@@ -195,7 +197,7 @@ Partial Class Form2
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents ComboBox3 As ComboBox
 End Class

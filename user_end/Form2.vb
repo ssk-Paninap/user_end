@@ -1,4 +1,6 @@
-﻿Public Class Form2
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+
+Public Class Form2
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         Dim personalInfoForm As New personal_info1
@@ -9,7 +11,7 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         ' Store values from this form into shared variables
         Form1.StudentID = TextBox1.Text
-        Form1.Reason = TextBox2.Text
+        Form1.Reason = ComboBox3.SelectedItem
         Form1.YearLevel = ComboBox1.SelectedIndex + 1
         Form1.Course = ComboBox2.SelectedIndex
 
@@ -35,6 +37,12 @@
         ComboBox2.Items.Add("BSED")
         ComboBox2.Items.Add("BEED")
         ComboBox2.Items.Add("BSN")
+
+        ComboBox3.Items.Add("Acads")
+        ComboBox3.Items.Add("Research")
+        ComboBox3.Items.Add("Online Class")
+        ComboBox3.Items.Add("Project Building")
+
 
         Label1.Text = "Hi, " & Form1.FullName & "! Please proceed."
     End Sub

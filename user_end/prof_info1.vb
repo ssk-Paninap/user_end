@@ -1,6 +1,6 @@
 ﻿Public Class prof_info1
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Form1.p_reason = ComboBox2.SelectedValue
+        Form1.p_reason = ComboBox2.SelectedItem.ToString()
 
         Form1.p_dept = ComboBox1.SelectedItem.ToString()
 
@@ -26,11 +26,11 @@
     End Sub
 
     Private Sub prof_info1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ComboBox1.Items.Add("A")
-        ComboBox1.Items.Add("B")
-        ComboBox1.Items.Add("C")
-        ComboBox1.Items.Add("D")
-        ComboBox1.Items.Add("E")
+        ComboBox1.Items.Add("School of Information Technology/ Computer Science")
+        ComboBox1.Items.Add("Nursing")
+        ComboBox1.Items.Add("Criminology")
+        ComboBox1.Items.Add("Education")
+        ComboBox1.Items.Add("Psychology")
 
         Label1.Text = "Greetings! Prof. " & Form1.FullName
 
@@ -39,7 +39,8 @@
         ComboBox2.Items.Add("Online Class")
         ComboBox2.Items.Add("Project Building")
 
-
+        ComboBox2.Text = Form1.p_reason
+        ComboBox1.Text = Form1.p_dept
 
     End Sub
 
