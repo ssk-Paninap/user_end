@@ -67,8 +67,8 @@ Public Class user_summary
         Dim fullname As String = Form1.FullName ' Assign FullName correctly here
         Dim yearLevel As Integer = ComboBox1.SelectedIndex + 1
         Dim course As String = ComboBox2.SelectedItem.ToString()
-        Dim reason As String = ComboBox5.SelectedText.ToString()
-        Dim duration As String = ComboBox6.SelectedText
+        Dim reason As String = ComboBox5.SelectedItem.ToString()
+        Dim duration As Integer = Integer.Parse(ComboBox6.SelectedIndex)
         Dim pcNumber As String = ComboBox3.SelectedItem.ToString()
         Dim labNumber As String = ComboBox4.SelectedItem.ToString()
 
