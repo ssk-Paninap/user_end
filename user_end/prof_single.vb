@@ -1,40 +1,6 @@
-﻿Public Class prof_single
+﻿Imports MySql.Data.MySqlClient
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim fullname As String = Form1.FullName
-        Dim department As String = Form1.p_dept ' This should now hold the department name
-        Dim reservation_type As String = Form1.restype
-        Dim reason As String = Form1.p_reason
-        Dim room_number As String = ComboBox2.SelectedItem
-        Dim pc_number As String = Form1.p_pcnum
-        Dim duration As Integer = Integer.Parse(ComboBox4.SelectedIndex)
-
-        Dim db As New dbhelper()
-        Dim success As Boolean = db.InsertTeacherReservation(fullname, department, reservation_type, reason, room_number, pc_number, duration)
-
-        If success Then
-            MessageBox.Show("Teacher reservation added successfully!")
-        Else
-            MessageBox.Show("Failed to add teacher reservation.")
-        End If
-        Application.Exit()
-
-        Me.Hide()
-        Dim prof_single As New generated_ticket
-        generated_ticket.ShowDialog()
-
-
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Hide()
-        Dim prof_single As New prof_info1
-        prof_info1.ShowDialog()
-    End Sub
-    Private Sub prof_single_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        Application.Exit()
-    End Sub
-
+Public Class prof_single
     Private Sub prof_single_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox1.Items.Add("School of Information Technology/ Computer Science")
         ComboBox1.Items.Add("Nursing")
@@ -77,5 +43,71 @@
         Label1.Text = "Just to clarify " & Form1.FullName
         ComboBox4.Text = Form1.p_reason
         ComboBox1.Text = Form1.p_dept
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim fullname As String = Form1.FullName
+        Dim department As String = Form1.p_dept
+        Dim reservation_type As String = Form1.restype
+        Dim reason As String = Form1.p_reason
+        Dim room_number As String = ComboBox2.SelectedItem.ToString()
+        Dim pc_number As Integer = Integer.Parse(Form1.p_pcnum) ' Ensure it's parsed correctly
+        Dim duration As Integer = ComboBox4.SelectedIndex
+        Dim ticketDate As DateTime = DateTime.Now
+        Dim ticketId As String = GenerateUniqueTicketId()
+
+        ' Create a new instance of prof_ticket and set properties
+        Dim profTick As New prof_ticket With {
+        .FullName = fullname,
+        .p_dept = department,
+        .restype = reservation_type,
+        .p_reason = reason,
+        .p_labNo = room_number,
+        .p_pcnum = pc_number,
+        .p_Duration = duration,
+        .TicketDate = ticketDate
+    }
+
+        ' Show the prof_ticket form
+        Me.Hide()
+        profTick.ShowDialog()
+
+    End Sub
+
+    Private Function GenerateUniqueTicketId() As String
+        Dim ticketId As String = String.Empty
+        Dim isUnique As Boolean = False
+        Dim random As New Random()
+
+        While Not isUnique
+            ' Random generation for ticket ID
+            ticketId = random.Next(100000, 999999).ToString()
+
+            ' Check if there is a similar ID in the DB
+            Dim connectionString As String = "Server=localhost;Database=labpass;Uid=root;Pwd=;"
+            Using connection As New MySqlConnection(connectionString)
+                Dim checkCommand As New MySqlCommand("SELECT COUNT(*) FROM user_reservation WHERE ticket_id = @ticketId", connection)
+                checkCommand.Parameters.AddWithValue("@ticketId", ticketId)
+
+                Try
+                    connection.Open()
+                    Dim count As Integer = Convert.ToInt32(checkCommand.ExecuteScalar())
+                    isUnique = (count = 0)
+                Catch ex As Exception
+                    MessageBox.Show("Error checking ticket ID uniqueness: " & ex.Message)
+                End Try
+            End Using
+        End While
+
+        Return ticketId
+    End Function
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        Dim prof_single As New prof_info1
+        prof_info1.ShowDialog()
+    End Sub
+    Private Sub prof_single_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Application.Exit()
     End Sub
 End Class

@@ -24,31 +24,28 @@
         Else
             MessageBox.Show("Failed to add teacher reservation.")
         End If
-        Application.Exit()
-        'Me.Hide()
-        ' Dim prof_ticket As New prof_ticket
-        ' prof_ticket.ShowDialog()
+
+        Me.Hide()
+        Dim prof_ticket As New prof_ticket
+        prof_ticket.ShowDialog()
     End Sub
 
     Private Sub full_room_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ComboBox1.Items.Add("Dept A")
-        ComboBox1.Items.Add("Dept B")
-        ComboBox1.Items.Add("Dept C")
-        ComboBox1.Items.Add("Dept D")
-        ComboBox1.Items.Add("Dept E")
+        ComboBox1.Items.Add("School of Information Technology/ Computer Science")
+        ComboBox1.Items.Add("Nursing")
+        ComboBox1.Items.Add("Criminology")
+        ComboBox1.Items.Add("Education")
+        ComboBox1.Items.Add("Psychology")
 
         ComboBox2.Items.Add("Lab 202")
         ComboBox2.Items.Add("Lab 203")
         ComboBox2.Items.Add("Lab 204")
         ComboBox2.Items.Add("Lab 205")
 
-        ComboBox3.Items.Add("Section 1 BSIT")
-        ComboBox3.Items.Add("Section 2 BSIT")
-        ComboBox3.Items.Add("Section 3 BSIT")
-        ComboBox3.Items.Add("Section 4 BSIT")
-        ComboBox3.Items.Add("Section 1 BSCS")
-        ComboBox3.Items.Add("Section 2 BSCS")
-
+        ComboBox3.Items.Add("Section 1")
+        ComboBox3.Items.Add("Section 2")
+        ComboBox3.Items.Add("Section 3")
+        ComboBox3.Items.Add("Section 4")
 
         ComboBox4.Items.Add("7:00 - 8:00")
         ComboBox4.Items.Add("8:00 - 9:00")

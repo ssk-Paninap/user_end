@@ -166,7 +166,6 @@ Partial Class full_room
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(249, 29)
         Me.ComboBox1.TabIndex = 32
-        Me.ComboBox1.Text = "School of Information Technoloy"
         '
         'ComboBox2
         '
