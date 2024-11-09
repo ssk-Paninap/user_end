@@ -26,8 +26,8 @@
         End If
 
         Me.Hide()
-        Dim prof_ticket As New prof_ticket
-        prof_ticket.ShowDialog()
+        Dim prof_ticket As New full_ticket
+        full_ticket.ShowDialog()
     End Sub
 
     Private Sub full_room_Load(sender As Object, e As EventArgs) Handles MyBase.Load

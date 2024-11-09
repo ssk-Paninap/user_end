@@ -191,7 +191,7 @@ Partial Class full_ticket
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(133, 34)
         Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Generate Again"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -200,7 +200,7 @@ Partial Class full_ticket
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(133, 34)
         Me.Button2.TabIndex = 16
-        Me.Button2.Text = "Button2"
+        Me.Button2.Text = "Exit"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'TextBox8
