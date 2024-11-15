@@ -20,12 +20,12 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Application.Exit() 'pangs sara lang di ko pa alam pano to 
+    End Sub
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         Dim Form1 As New Form1
         Form1.ShowDialog()
-    End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        Application.Exit() 'pangs sara lang di ko pa alam pano to 
     End Sub
 End Class

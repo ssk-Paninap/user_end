@@ -91,12 +91,6 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="full_ticket.Designer.vb">
-      <DependentUpon>full_ticket.vb</DependentUpon>
-    </Compile>
-    <Compile Include="full_ticket.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="personal_info1.Designer.vb">
       <DependentUpon>personal_info1.vb</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -163,9 +157,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="full_ticket.resx">
-      <DependentUpon>full_ticket.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="personal_info1.resx">
       <DependentUpon>personal_info1.vb</DependentUpon>

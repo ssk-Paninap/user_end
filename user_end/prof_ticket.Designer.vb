@@ -179,20 +179,22 @@ Partial Class prof_ticket
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(70, 314)
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(12, 353)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(114, 33)
+        Me.Button1.Size = New System.Drawing.Size(191, 33)
         Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Generate another ticket"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(203, 314)
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(209, 353)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(114, 33)
+        Me.Button2.Size = New System.Drawing.Size(190, 33)
         Me.Button2.TabIndex = 16
-        Me.Button2.Text = "Button2"
+        Me.Button2.Text = "I'm Done using LabPass"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'prof_ticket
