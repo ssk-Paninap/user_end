@@ -1,13 +1,13 @@
 ﻿Public Class prof_ticket
-    Public Property p_dept As String
     Public Property FullName As String
-    Public Property p_reason As String
-    Public Property p_Duration As String
-    Public Property p_pcnum As Integer
-    Public Property p_labNo As String ' Change to String if it's a room number like "Lab 202"
+    Public Property p_dept As String
     Public Property restype As String
-    Public Property TicketId As String
+    Public Property p_reason As String
+    Public Property p_labNo As String
+    Public Property p_pcnum As String
+    Public Property p_Duration As String
     Public Property TicketDate As DateTime
+    Public Property TicketId As String
 
 
 

@@ -77,7 +77,7 @@ Public Class user_summary
         'DB CONNETION
         Dim connectionString As String = "Server=localhost;Database=labpass;Uid=root;Pwd=;"
         Using connection As New MySqlConnection(connectionString)
-            Dim command As New MySqlCommand("INSERT INTO user_reservation (ticket_id, student_id, fullname, year_lvl, course, reason, duration, pc_number, lab_number, ticket_date) VALUES (@ticketId, @studentId, @fullname, @yearLevel, @course, @reason, @duration, @pcNumber, @labNumber, @ticketDate)", connection)
+            Dim command As New MySqlCommand("INSERT INTO user_reservation (ticket_id, student_id, fullname, year_lvl, course, reason, duration, pc_number, lab_number) VALUES (@ticketId, @studentId, @fullname, @yearLevel, @course, @reason, @duration, @pcNumber, @labNumber)", connection)
             command.Parameters.AddWithValue("@ticketId", ticketId)
             command.Parameters.AddWithValue("@studentId", studentId)
             command.Parameters.AddWithValue("@fullname", fullname)
