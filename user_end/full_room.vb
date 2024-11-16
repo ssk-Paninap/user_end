@@ -23,9 +23,9 @@ Public Class full_room
                                                     department, reservation_type,
                                                     reason, room_number, duration, section)
 
-        If success Then
-            MessageBox.Show("Reservation added successfully!")
-            Me.Hide()
+
+
+        Me.Hide()
             Dim profTick As New fullroom_ticket With {
             .FullName = fullname,
             .p_dept = department,
@@ -38,7 +38,7 @@ Public Class full_room
             .section = section
         }
             profTick.ShowDialog()
-        End If
+
     End Sub
 
     Private Function GenerateUniqueTicketId() As String
