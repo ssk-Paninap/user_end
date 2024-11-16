@@ -11,7 +11,7 @@
 
     Public Shared p_dept As String
     Public Shared p_reason As String
-    Public Shared p_Duration As Integer
+    Public Property p_duration As String
     Public Shared p_pcnum As Integer
     Public Shared p_labNo As Integer
     Public Shared restype As String

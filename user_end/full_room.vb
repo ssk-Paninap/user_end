@@ -5,70 +5,72 @@ Public Class full_room
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
+
         Dim fullname As String = Form1.FullName
-        Dim department As String = Form1.p_dept ' This should now hold the department name
+        Dim department As String = Form1.p_dept
         Dim reservation_type As String = Form1.restype
         Dim reason As String = Form1.p_reason
         Dim room_number As String = ComboBox2.SelectedItem.ToString()
-        Dim duration As Integer = Integer.Parse(ComboBox4.SelectedIndex)
         Dim section As String = ComboBox3.SelectedItem.ToString()
+        Dim duration As Integer = ComboBox4.SelectedIndex
+        ' Get the actual time slot text
+        Dim durationText As String = ComboBox4.SelectedItem.ToString()
         Dim ticketDate As DateTime = DateTime.Now
         Dim ticketId As String = GenerateUniqueTicketId()
 
         Dim db As New dbhelper()
-        Dim success As Boolean = db.InsertTeacherReservation(ticketId, section, fullname, department, reservation_type, reason, room_number, duration, section)
+        Dim success As Boolean = db.InsertTeacherReservation(ticketId, section, fullname,
+                                                    department, reservation_type,
+                                                    reason, room_number, duration, section)
 
         If success Then
-            MessageBox.Show("Teacher reservation added successfully!")
-        Else
-            MessageBox.Show("Failed to add teacher reservation.")
+            MessageBox.Show("Reservation added successfully!")
+            Me.Hide()
+            Dim profTick As New fullroom_ticket With {
+            .FullName = fullname,
+            .p_dept = department,
+            .restype = reservation_type,
+            .p_reason = reason,
+            .p_labNo = room_number,
+            .p_duration = durationText,  ' Pass the actual time slot text instead of the index
+            .TicketDate = ticketDate,
+            .TicketId = ticketId,
+            .section = section
+        }
+            profTick.ShowDialog()
         End If
-
-
-
-
-        Me.Hide()
-        Dim profTick As New fullroom_ticket With {
-        .FullName = fullname,
-        .p_dept = department,
-        .restype = reservation_type,
-        .p_reason = reason,
-        .p_labNo = room_number,
-        .p_duration = duration,
-        .TicketDate = ticketDate,
-        .TicketId = ticketId,
-        .section = section
-    }
-        profTick.ShowDialog()
-
     End Sub
+
     Private Function GenerateUniqueTicketId() As String
         Dim ticketId As String = String.Empty
         Dim isUnique As Boolean = False
         Dim random As New Random()
 
         While Not isUnique
-            ' Random generation for ticket ID
+            ' Generate a random ticket ID
             ticketId = random.Next(100000, 999999).ToString()
 
-            ' Check if there is a similar ID in the DB
+            ' Check if ticket ID is unique
+
             Dim connectionString As String = "Server=localhost;Database=labpass;Uid=root;Pwd=;"
             Using connection As New MySqlConnection(connectionString)
-                Dim checkCommand As New MySqlCommand("SELECT COUNT(*) FROM user_reservation WHERE ticket_id = @ticketId", connection)
-                checkCommand.Parameters.AddWithValue("@ticketId", ticketId)
+                Using checkCommand As New MySqlCommand("SELECT COUNT(*) FROM user_reservation WHERE ticket_id = @ticketId", connection)
+                    checkCommand.Parameters.AddWithValue("@ticketId", ticketId)
 
-                Try
-                    connection.Open()
-                    Dim count As Integer = Convert.ToInt32(checkCommand.ExecuteScalar())
-                    isUnique = (count = 0)
-                Catch ex As Exception
-                    MessageBox.Show("Error checking ticket ID uniqueness: " & ex.Message)
-                End Try
+                    Try
+                        connection.Open()
+                        Dim count As Integer = Convert.ToInt32(checkCommand.ExecuteScalar())
+                        isUnique = (count = 0)
+                    Catch ex As Exception
+                        MessageBox.Show("Error checking ticket ID uniqueness: " & ex.Message)
+                    End Try
+                End Using
             End Using
         End While
 
         Return ticketId
     End Function
+
 
     Private Sub full_room_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox1.Items.Add("School of Information Technology/ Computer Science")
