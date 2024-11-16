@@ -149,5 +149,4 @@ Public Class user_summary
     Private Sub personal_info1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Application.Exit()
     End Sub
-
 End Class

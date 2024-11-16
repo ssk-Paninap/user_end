@@ -1,4 +1,5 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Collections.Specialized.BitVector32
+Imports MySql.Data.MySqlClient
 
 Public Class prof_single
     Private Sub prof_single_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -43,6 +44,8 @@ Public Class prof_single
         Label1.Text = "Just to clarify " & Form1.FullName
         ComboBox4.Text = Form1.p_reason
         ComboBox1.Text = Form1.p_dept
+
+        Form1.restype = "One PC"
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -51,12 +54,24 @@ Public Class prof_single
         Dim reservation_type As String = Form1.restype
         Dim reason As String = Form1.p_reason
         Dim room_number As String = ComboBox2.SelectedItem.ToString()
-        Dim pc_number As Integer = Integer.Parse(Form1.p_pcnum) ' Ensure it's parsed correctly
-        Dim duration As Integer = ComboBox4.SelectedIndex
+        Dim pc_number As Integer = ComboBox3.SelectedIndex + 1 ' Ensure it's parsed correctly
+        Dim duration As Integer = ComboBox5.SelectedItem.ToString()
         Dim ticketDate As DateTime = DateTime.Now
         Dim ticketId As String = GenerateUniqueTicketId()
+        Dim section As String = ComboBox3.SelectedItem.ToString()
 
-        ' Create a new instance of prof_ticket and set properties
+        Dim db As New dbhelper()
+        Dim success As Boolean = db.InsertTeacherReservation(ticketId, fullname, department, reservation_type, reason, room_number, pc_number, duration, section)
+
+        If success Then
+            MessageBox.Show("Teacher reservation added successfully!")
+        Else
+            MessageBox.Show("Failed to add teacher reservation.")
+        End If
+
+
+        ' Show the prof_ticket form
+        Me.Hide()
         Dim profTick As New prof_ticket With {
         .FullName = fullname,
         .p_dept = department,
@@ -65,11 +80,9 @@ Public Class prof_single
         .p_labNo = room_number,
         .p_pcnum = pc_number,
         .p_Duration = duration,
-        .TicketDate = ticketDate
+        .TicketDate = ticketDate,
+        .TicketId = ticketId
     }
-
-        ' Show the prof_ticket form
-        Me.Hide()
         profTick.ShowDialog()
 
     End Sub

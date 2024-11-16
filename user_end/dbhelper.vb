@@ -30,14 +30,15 @@ Public Class dbhelper
         End Try
     End Function
 
-    Public Function InsertTeacherReservation(fullname As String, department As String, reservation_type As String, reason As String, room_number As String, pc_number As String, duration As Integer) As Boolean
+    Public Function InsertTeacherReservation(ticket_id As String, fullname As String, department As String, reservation_type As String, reason As String, room_number As String, pc_number As String, duration As Integer, section As String) As Boolean
         Try
             Using connection As New MySqlConnection(connectionString)
                 connection.Open()
                 ' SQL command to insert a new teacher reservation
-                Dim command As New MySqlCommand("INSERT INTO teacher_reservation (fullname, department, reservation_type, reason, room_number, pc_number, duration, reservation_date) VALUES (@fullname, @department, @reservation_type, @reason, @room_number, @pc_number, @duration, @reservation_date)", connection)
+                Dim command As New MySqlCommand("INSERT INTO teacher_reservation (ticket_id, fullname, department, reservation_type, reason, room_number, pc_number, duration, reservation_date, section) VALUES (@ticketId, @fullname, @department, @reservation_type, @reason, @room_number, @pc_number, @duration, @reservation_date, @section)", connection)
 
                 ' Add parameters for the teacher reservation
+                command.Parameters.AddWithValue("@ticket_id", ticket_id)
                 command.Parameters.AddWithValue("@fullname", fullname)
                 command.Parameters.AddWithValue("@department", department)
                 command.Parameters.AddWithValue("@reservation_type", reservation_type)
@@ -45,7 +46,7 @@ Public Class dbhelper
                 command.Parameters.AddWithValue("@room_number", room_number)
                 command.Parameters.AddWithValue("@pc_number", pc_number)
                 command.Parameters.AddWithValue("@duration", duration)
-
+                command.Parameters.AddWithValue("@section", section)
                 ' Add current timestamp for reservation_date
                 command.Parameters.AddWithValue("@reservation_date", DateTime.Now)
 

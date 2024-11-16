@@ -15,6 +15,7 @@
     Public Shared p_pcnum As Integer
     Public Shared p_labNo As Integer
     Public Shared restype As String
+    Public Shared section As String
 
     Private Sub genticket_Click(sender As Object, e As EventArgs) Handles genticket.Click
         Me.Hide()
